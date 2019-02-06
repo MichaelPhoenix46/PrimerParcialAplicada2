@@ -10,7 +10,7 @@
 namespace PrimerPacialAplicada2.Registros {
     
     
-    public partial class RDepositos {
+    public partial class RDeposito {
         
         /// <summary>
         /// DepositoIdTextBox control.

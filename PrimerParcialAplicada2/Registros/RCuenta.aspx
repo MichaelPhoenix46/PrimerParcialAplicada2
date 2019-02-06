@@ -1,5 +1,4 @@
-﻿
-<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RCuenta.aspx.cs" Inherits="PrimerPacialAplicada2.Registros.RCuenta" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RCuenta.aspx.cs" Inherits="PrimerPacialAplicada2.Registros.RCuenta" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
      <div class="panel" style="background-color:black">

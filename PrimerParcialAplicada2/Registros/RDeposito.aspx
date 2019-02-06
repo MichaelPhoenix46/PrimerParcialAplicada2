@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RDeposito.aspx.cs" Inherits="PrimerPacialAplicada2.Registros.RDepositos" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RDeposito.aspx.cs" Inherits="PrimerPacialAplicada2.Registros.RDeposito" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
      <div class="panel" style="background-color:black">

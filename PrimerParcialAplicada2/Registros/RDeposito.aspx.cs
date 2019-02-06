@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace PrimerPacialAplicada2.Registros
 {
-    public partial class RDepositos : System.Web.UI.Page
+    public partial class RDeposito : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

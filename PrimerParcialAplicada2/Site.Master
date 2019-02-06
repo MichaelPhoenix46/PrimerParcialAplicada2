@@ -62,14 +62,14 @@
     <form id="form1" runat="server">
 
         <div class="row">
-            <div class="col-lg-12" style="background-color: white; text-align:center">
+            <div class="col-sm-12" style="background-color: white; text-align:center">
                 <a href="/default.aspx">
                     <img src="/Resources/BancoDigital.jpg" alt="Banking Control">
                 </a>
             </div>
         </div>
 
-        <%--menu principal--%>
+        <%--menu--%>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -78,28 +78,25 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/default.aspx">Banking Control</a>
+                    <a class="navbar-brand" href="/default.aspx">Banco Digital</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Registros<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/Registros/rCuentas.aspx">Cuentas</a></li>
-                                <li><a href="/Registros/rDepositos.aspx">Depositos</a></li>
+                                <li><a href="/Registros/RCuenta.aspx">Cuentas</a></li>
+                                <li><a href="/Registros/RDeposito.aspx">Depositos</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Consultas<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/Consultas/cCuentas.aspx">Cuentas</a></li>
-                                <li><a href="/Consultas/cDepositos.aspx">Depositos</a></li>
+                                <li><a href="/Consultas/CCuentas.aspx">Cuentas</a></li>
+                                <li><a href="/Consultas/CDepositos.aspx">Depositos</a></li>
                             </ul>
                         </li>
                         <li><a href="#">Ayuda</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><span class="glyphicon glyphicon-lock"></span> Cerrar Sesion</a></li>
                     </ul>
                 </div>
             </div>
@@ -113,7 +110,7 @@
 
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Copyright Banking Control SAG</p>
+                <p>&copy; <%: DateTime.Now.Year %> - :)</p>
             </footer>
         </div>
     </form>
