@@ -21,15 +21,8 @@ namespace PrimerPacialAplicada2.Registros
                 {
                     RepositorioBase<Cuenta> repositorio = new RepositorioBase<Cuenta>();
                     var registro = repositorio.Buscar(id);
+                    LlenaCampos(registro);
 
-                    if (registro == null)
-                    {
-                        Utils.ShowToastr(this.Page, "Registro no encontrado", "Error", "error");
-                    }
-                    else
-                    {
-                        LlenaCampos(registro);
-                    }
                 }
             }
         }
@@ -105,7 +98,6 @@ namespace PrimerPacialAplicada2.Registros
             if (paso)
             {
                 Utils.ShowToastr(this.Page, "Guardado con exito!!", "Guardado", "success");
-                Limpiar();
             }
         }
 

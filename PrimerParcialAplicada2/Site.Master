@@ -62,7 +62,7 @@
     <form id="form1" runat="server">
 
         <div class="row">
-            <div class="col-sm-12" style="background-color: white; text-align:center">
+            <div class="col-sm-12" style="background-color: white; text-align: center">
                 <a href="/default.aspx">
                     <img src="/Resources/BancoDigital.jpg" alt="Banking Control">
                 </a>
@@ -92,8 +92,8 @@
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Consultas<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/Consultas/CCuentas.aspx">Cuentas</a></li>
-                                <li><a href="/Consultas/CDepositos.aspx">Depositos</a></li>
+                                <li><a href="/Consultas/CCuenta.aspx">Cuentas</a></li>
+                                <li><a href="/Consultas/CDeposito.aspx">Depositos</a></li>
                             </ul>
                         </li>
                         <li><a href="#">Ayuda</a></li>
@@ -110,7 +110,6 @@
 
             <hr />
             <footer>
-
             </footer>
         </div>
     </form>

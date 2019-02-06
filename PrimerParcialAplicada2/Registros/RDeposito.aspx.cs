@@ -124,7 +124,6 @@ namespace PrimerPacialAplicada2.Registros
             if (paso)
             {
                 Utils.ShowToastr(this.Page, "Guardado con exito!!", "Guardado", "success");
-                Limpiar();
             }
         }
 
