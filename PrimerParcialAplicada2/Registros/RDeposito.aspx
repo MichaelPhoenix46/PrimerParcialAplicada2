@@ -7,7 +7,6 @@
 
     <div class="panel-body">
         <div class="form-horizontal col-md-12" role="form">
-            <%--DepositoId--%>
             <div class="form-group">
                 <label for="DepositoIdTextBox" class="col-md-3 control-label input-sm" style="font-size: large">Deposito Id</label>
                 <div class="col-md-1 col-sm-2 col-xs-4">
@@ -18,7 +17,6 @@
                     <asp:Button ID="BuscarButton" runat="server" Text="Buscar" class="btn btn-info btn-sm" OnClick="BuscarButton_Click" />
                 </div>
             </div>
-            <%--CuentaId--%>
             <div class="form-group">
                 <label for="CuentaIdDropDownList" class="col-md-3 control-label input-sm" style="font-size: large">Cuenta</label>
                 <div class="col-md-8">
@@ -27,7 +25,6 @@
                 </div>
             </div>
 
-            <%--Concepto y Monto--%>
             <div class="form-group">
                 <label for="ConceptoTextBox" class="col-md-3 control-label input-sm" style="font-size: large">Concepto</label>
                 <div class="col-md-3">
@@ -43,13 +40,11 @@
                 <asp:RequiredFieldValidator ID="ValidaMonto" runat="server" ErrorMessage="El campo &quot;Monto&quot; esta vacio" ControlToValidate="MontoTextBox" ForeColor="Red" Display="Dynamic" ToolTip="Campo Monto obligatorio" ValidationGroup="Guardar">*</asp:RequiredFieldValidator>
             </div>
 
-            <%--Fecha--%>
             <div class="form-group">
                 <div class="col-md-8">
                     <asp:TextBox ID="FechaTextBox" TextMode="Date" runat="server" class="form-control input-sm" Style="font-size: large" Visible="false"></asp:TextBox>
                 </div>
             </div>
-            <%--Botones--%>
             <div class="panel">
                 <div class="text-center">
                     <div class="form-group">

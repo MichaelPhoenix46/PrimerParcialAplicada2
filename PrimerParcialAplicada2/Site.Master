@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <%--Librerias para el toast--%>
     <link href="./Media/css/Grey/ListBox.Grey.css" rel="stylesheet" type="text/css" />
     <link href="./Media/css/WebTrack.css" rel="stylesheet" type="text/css" />
     <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
@@ -19,7 +18,6 @@
         rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"
         type="text/javascript"></script>
-    <%--Programacion en Javascript para que funcione el toast--%>
     <script type="text/javascript">
         function Notify(msg, title, type, clear, pos, sticky) {
             if (clear == true) {
@@ -61,7 +59,6 @@
 <body>
     <form id="form1" runat="server">
 
-        <%--menu--%>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -95,7 +92,7 @@
         </nav>
 
 
-        <%--contenedor y pie de pagina--%>
+        
         <div class=" container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
