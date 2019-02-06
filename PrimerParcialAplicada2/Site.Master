@@ -61,14 +61,6 @@
 <body>
     <form id="form1" runat="server">
 
-        <div class="row">
-            <div class="col-sm-12" style="background-color: white; text-align: center">
-                <a href="/default.aspx">
-                    <img src="/Resources/BancoDigital.jpg" alt="Banking Control">
-                </a>
-            </div>
-        </div>
-
         <%--menu--%>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
