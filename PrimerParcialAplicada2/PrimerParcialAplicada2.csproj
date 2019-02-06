@@ -75,6 +75,9 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Registros\RCuenta.aspx" />
+    <Content Include="Registros\RDeposito.aspx" />
+    <Content Include="Resources\BancoDigital.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +92,20 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registros\RCuenta.aspx.cs">
+      <DependentUpon>RCuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros\RCuenta.aspx.designer.cs">
+      <DependentUpon>RCuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\RDeposito.aspx.cs">
+      <DependentUpon>RDeposito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros\RDeposito.aspx.designer.cs">
+      <DependentUpon>RDeposito.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -96,6 +113,7 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="Utilidades\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -111,7 +129,20 @@
     <Folder Include="App_Data\" />
     <Folder Include="Consultas\" />
     <Folder Include="Models\" />
-    <Folder Include="Registros\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{7cc424e9-d2da-4f77-bbe4-7354658996bb}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{7b36ba88-c5d1-47c5-9511-a9923dffb6c6}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{db826307-a867-471e-8cf0-9a88a23ac132}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

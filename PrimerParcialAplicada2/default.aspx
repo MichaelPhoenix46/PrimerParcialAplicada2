@@ -1,12 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="PrimerParcialAplicada2.Default" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="PrimerPacialAplicada2.Default"%>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4" style="font-weight: bold">SAG.do</h1>
-            <p class="lead">Tu Banco en casa.</p>
-        </div>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+     <div class="panel">
+    <div class ="jumbotron">
+        <h2 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:black"><strong>Bienvenidos a Banking Control</strong></h2>
+        <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:black; text-align:left">Tu mejor amigo a la hora del control bancario<strong> Pruebalo!</strong></p>
     </div>
+   </div>
 </asp:Content>

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PrimerParcialAplicada2 {
+namespace PrimerPacialAplicada2 {
     
     
     public partial class Default {
