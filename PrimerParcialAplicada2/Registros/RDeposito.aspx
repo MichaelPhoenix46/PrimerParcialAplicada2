@@ -26,18 +26,12 @@
             </div>
 
             <div class="form-group">
-                <label for="ConceptoTextBox" class="col-md-3 control-label input-sm" style="font-size: large">Concepto</label>
+                <label for="ConceptoTextBox" class="col-md-3 control-label input-sm" style="font-size: large" >Concepto</label>
                 <div class="col-md-3">
-                    <asp:TextBox ID="ConceptoTextBox" runat="server" class="form-control input-sm" Style="font-size: large"></asp:TextBox>
+                    <asp:TextBox ID="ConceptoTextBox" runat="server" class="form-control input-sm" Style="font-size: large"  Width="800px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="ValidaConcepto" runat="server" ErrorMessage="El campo &quot;Concepto&quot; esta vacio" ControlToValidate="ConceptoTextBox" ForeColor="Red" Display="Dynamic" ToolTip="Campo Concepto es obligatorio" ValidationGroup="Guardar">*</asp:RequiredFieldValidator>
                 </div>
 
-                <label for="MontoTextBox" class="col-md-1 control-label input-sm" style="font-size: large">Monto</label>
-                <div class="col-md-3">
-                    <asp:TextBox ID="MontoTextBox" runat="server" class="form-control input-sm" Style="font-size: large"></asp:TextBox>
-                </div>
-                <asp:RegularExpressionValidator ID="ValidaMontoNUM" runat="server" ErrorMessage='Campo "Monto" solo acepta numeros' ControlToValidate="MontoTextBox" ValidationExpression="^[0-9]*" Text="*" ForeColor="Red" Display="Dynamic" ToolTip="Entrada no valida" ValidationGroup="Guardar"></asp:RegularExpressionValidator>
-                <asp:RequiredFieldValidator ID="ValidaMonto" runat="server" ErrorMessage="El campo &quot;Monto&quot; esta vacio" ControlToValidate="MontoTextBox" ForeColor="Red" Display="Dynamic" ToolTip="Campo Monto obligatorio" ValidationGroup="Guardar">*</asp:RequiredFieldValidator>
             </div>
 
             <div class="form-group">
