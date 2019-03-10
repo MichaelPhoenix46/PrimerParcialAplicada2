@@ -27,15 +27,16 @@ namespace PrimerPacialAplicada2.Consultas
             switch (FiltroDropDownList.SelectedIndex)
             {
                 case 0: //Todo
-                    repositorio.GetList(c => true);
+                    repositorio.GetList(x => true);
                     break;
+                    
                 case 1://PrestamoId
                     id = Utilidades.Utils.ToInt(CriterioTextBox.Text);
-                    filtro = c => c.PrestamoId == id;
+                    filtro = c => c.PrestamoId == id && (c.Fecha >= Convert.ToDateTime(DesdeTextBox.Text) && c.Fecha <= Convert.ToDateTime(HastaTextBox.Text));
                     break;
                 case 2://CuentaId
                     id = Utilidades.Utils.ToInt(CriterioTextBox.Text);
-                    filtro = c => c.CuentaId == id;
+                    filtro = c => c.CuentaId == id && (c.Fecha >= Convert.ToDateTime(DesdeTextBox.Text) && c.Fecha <= Convert.ToDateTime(HastaTextBox.Text));
                     break;
             }
 
