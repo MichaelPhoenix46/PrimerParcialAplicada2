@@ -20,8 +20,8 @@ namespace Entities
         public decimal InteresMensual { get; set; }
         public decimal CapitalMensual { get; set; }
         public decimal Balance { get; set; }
-        [ForeignKey("CuentaId")]
-        public virtual Cuenta Cuenta { get; set; }
+        [ForeignKey("PrestamoId")]
+        public virtual Prestamo Prestamo { get; set; }
 
 
         public DetallePrestamo()
@@ -30,19 +30,17 @@ namespace Entities
             Fecha = DateTime.Now;
             PrestamoId = 0;
             Cuota = 0;
-            CuentaId = 0;
             InteresMensual = 0;
             CapitalMensual = 0;
             Balance = 0;
         }
 
-        public DetallePrestamo(int id, DateTime fecha, int prestamoId, int cuota, int cuentaId, decimal interesMensual, decimal capitalMensual, decimal balance)
+        public DetallePrestamo(int id, DateTime fecha, int prestamoId, int cuota, decimal interesMensual, decimal capitalMensual, decimal balance)
         {
             DetalleId = id;
             Fecha = fecha;
             PrestamoId = prestamoId;
             Cuota = cuota;
-            CuentaId = cuentaId;
             InteresMensual = interesMensual;
             CapitalMensual = capitalMensual;
             Balance = balance;

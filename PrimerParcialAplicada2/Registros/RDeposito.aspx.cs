@@ -24,9 +24,8 @@ namespace PrimerPacialAplicada2.Registros
             MontoTextBox.Text = string.Empty;
         }
 
-        private Deposito LlenaClase()
+        private Deposito LlenaClase(Deposito deposito)
         {
-            Deposito deposito = new Deposito();
             deposito.DepositoId = Utils.ToInt(DepositoIdTextBox.Text);
             deposito.CuentaId = Utils.ToInt(CuentaIdDropDownList.Text);
             deposito.Concepto = ConceptoTextBox.Text;
@@ -49,7 +48,7 @@ namespace PrimerPacialAplicada2.Registros
 
             CuentaIdDropDownList.DataSource = repositorioBase.GetList(t => true);
             CuentaIdDropDownList.DataValueField = "CuentaId";
-            CuentaIdDropDownList.DataTextField = "CuentaId";
+            CuentaIdDropDownList.DataTextField = "Nombre";
             CuentaIdDropDownList.DataBind();
         }
 
@@ -84,7 +83,7 @@ namespace PrimerPacialAplicada2.Registros
                 Utils.ShowToastr(this.Page, "Revisar todos los campo", "Error", "error");
                 return;
             }
-            deposito = LlenaClase();
+            deposito = LlenaClase(deposito);
             if (deposito.DepositoId == 0)
                 paso = repositorio.Guardar(deposito);
             else
@@ -95,6 +94,7 @@ namespace PrimerPacialAplicada2.Registros
             }
             else
                 Utils.ShowToastr(this.Page, "Revisar todos los campo", "Error", "error");
+            
         }
 
         protected void EliminarButton_Click(object sender, EventArgs e)

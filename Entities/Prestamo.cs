@@ -25,9 +25,9 @@ namespace Entities
             Detalle = new List<DetallePrestamo>();
         }
 
-        public void AgregarDetalle(int Id, DateTime Fecha, int PrestamoId, int Cuota, int CuentaId, decimal InteresMensual, int CapitalMensual, decimal Balance)
+        public void AgregarDetalle(int Id, DateTime Fecha, int PrestamoId, int Cuota, decimal InteresMensual, int CapitalMensual, decimal Balance)
         {
-            Detalle.Add(new DetallePrestamo(Id, Fecha, PrestamoId, Cuota, CuentaId, InteresMensual, CapitalMensual, Balance));
+            Detalle.Add(new DetallePrestamo(Id, Fecha, PrestamoId, Cuota, InteresMensual, CapitalMensual, Balance));
         }
     }
 }

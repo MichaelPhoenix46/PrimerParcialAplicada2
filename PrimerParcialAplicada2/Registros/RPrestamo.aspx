@@ -13,15 +13,14 @@
                     <asp:TextBox ID="PrestamoIdTextBox" runat="server" placeholder="0" class="form-control input-sm" Style="font-size: large" TextMode="Number"></asp:TextBox>
                 </div>
                 <div class="col-md-1 col-sm-2 col-xs-4">
-                    <%--OnClick="BuscarButton_Click"--%>
-                    <asp:Button ID="BuscarButton" runat="server" Text="Buscar" class="btn btn-info btn-sm" />
+                    <asp:Button ID="BuscarButton" runat="server" Text="Buscar" class="btn btn-info btn-sm" OnClick="BuscarButton_Click" />
                 </div>
             </div>
             <div class="form-group">
-                <label for="CuentaIdDropDownList" class="col-md-3 control-label input-sm" style="font-size: large">Cuenta</label>
-                <div class="col-md-1">
-                    <asp:DropDownList ID="CuentaIdDropDownList" runat="server" Class="form-control input-sm" Style="font-size: large">
-                    </asp:DropDownList>
+                <label for="CuentaTextBox" class="col-md-3 control-label input-sm" style="font-size: large">Cuenta</label>
+                <div class="col-md-2">
+                    <asp:TextBox ID="CuentaTextBox" runat="server" placeholder="0" class="form-control input-sm" Style="font-size: large" TextMode="Number"></asp:TextBox>
+
                 </div>
             </div>
 
@@ -49,12 +48,14 @@
                 </div>
                 <%-- Probar el color al fallar validacion--%>
                 <asp:RequiredFieldValidator ID="ValidaMeses" runat="server" ErrorMessage="El campo &quot;Tiempo en meses&quot; esta vacio" ControlToValidate="TiempoMesesTextBox" ForeColor="Red" Display="Dynamic" ToolTip="Campo tiempo en meses obligatorio" ValidationGroup="Guardar" BorderColor="Red">*</asp:RequiredFieldValidator>
-                <asp:Button ID="CalcularButton" runat="server" Text="Calcular" Class="btn btn-default btn" />
+                <asp:Button ID="CalcularButton" runat="server" Text="Calcular" Class="btn btn-default btn" OnClick="CacularButton_Click" />
             </div>
             <%--            agregar el gridview--%>
-            <div class="form-group">
-                <asp:GridView ID="GridView1" runat="server"></asp:GridView>
-            </div>
+            <asp:GridView ID="PrestamoGridView" class="table table-condensed table-bordered table-responsive" runat="server" CellPadding="4" ForeColor="Teal" GridLines="None">
+                <AlternatingRowStyle BorderColor="White" />
+
+                <HeaderStyle BackColor="Window" Font-Bold="true" />
+            </asp:GridView>
 
             <div class="form-group">
                 <div class="col-md-8">
@@ -63,11 +64,11 @@
             </div>
             <div class="panel">
                 <div class="text-center">
-                    <%--<div class="form-group">
+                    <div class="form-group">
                         <asp:Button ID="NuevoButton" runat="server" Text="Nuevo" class="btn btn-primary btn-md" OnClick="NuevoButton_Click" />
                         <asp:Button ID="GuardarButton" runat="server" Text="Guardar" class="btn btn-success btn-md" ValidationGroup="Guardar" OnClick="GuardarButton_Click" />
                         <asp:Button ID="EliminarButton" runat="server" Text="Eliminar" class="btn btn-danger btn-md" OnClick="EliminarButton_Click" />
-                    </div>--%>
+                    </div>
                 </div>
             </div>
 
