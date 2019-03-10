@@ -67,6 +67,33 @@ namespace PrimerPacialAplicada2.Registros {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidaConcepto;
         
         /// <summary>
+        /// MontoTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox MontoTextBox;
+        
+        /// <summary>
+        /// ValidaMontoNUM control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator ValidaMontoNUM;
+        
+        /// <summary>
+        /// ValidaMonto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidaMonto;
+        
+        /// <summary>
         /// FechaTextBox control.
         /// </summary>
         /// <remarks>
