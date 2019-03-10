@@ -99,11 +99,11 @@ namespace PrimerParcialAplicada2.Registros
 
                 if (i == 0)
                 {
-                    detallePrestamolista.Add(new DetallePrestamo(0, detalle.Fecha, Utils.ToInt(PrestamoIdTextBox.Text), cuota,detalle.InteresMensual, detalle.CapitalMensual, detalle.Balance));
+                    detallePrestamolista.Add(new DetallePrestamo(cuota, 0, detalle.Fecha, Utils.ToInt(PrestamoIdTextBox.Text),detalle.InteresMensual, detalle.CapitalMensual, detalle.Balance));
                 }
                 else
                 {
-                    detallePrestamolista.Add(new DetallePrestamo(0, detalle.Fecha, Utils.ToInt(PrestamoIdTextBox.Text), cuota, detalle.InteresMensual, detalle.CapitalMensual, detalle.Balance));
+                    detallePrestamolista.Add(new DetallePrestamo(cuota,0, detalle.Fecha, Utils.ToInt(PrestamoIdTextBox.Text), detalle.InteresMensual, detalle.CapitalMensual, detalle.Balance));
                 }
 
 

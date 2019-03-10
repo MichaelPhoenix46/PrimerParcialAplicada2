@@ -35,7 +35,7 @@ namespace Entities
             Balance = 0;
         }
 
-        public DetallePrestamo(int id, DateTime fecha, int prestamoId, int cuota, decimal interesMensual, decimal capitalMensual, decimal balance)
+        public DetallePrestamo(int cuota,int id, DateTime fecha, int prestamoId, decimal interesMensual, decimal capitalMensual, decimal balance)
         {
             DetalleId = id;
             Fecha = fecha;

@@ -84,6 +84,8 @@
                             <ul class="dropdown-menu">
                                 <li><a href="/Consultas/CCuenta.aspx">Cuentas</a></li>
                                 <li><a href="/Consultas/CDeposito.aspx">Depositos</a></li>
+                                <li><a href="/Consultas/CPrestamo.aspx">Prestamos</a></li>
+
                             </ul>
                         </li>
                         <li><a href="#">Ayuda</a></li>
@@ -93,7 +95,7 @@
         </nav>
 
 
-        
+
         <div class=" container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
