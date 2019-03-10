@@ -7,28 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PrimerPacialAplicada2.Registros {
+namespace PrimerParcialAplicada2.Registros {
     
     
-    public partial class RDeposito {
+    public partial class RPrestamo {
         
         /// <summary>
-        /// DepositoIdTextBox control.
+        /// PrestamoIdTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DepositoIdTextBox;
-        
-        /// <summary>
-        /// ValidaID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator ValidaID;
+        protected global::System.Web.UI.WebControls.TextBox PrestamoIdTextBox;
         
         /// <summary>
         /// BuscarButton control.
@@ -49,40 +40,76 @@ namespace PrimerPacialAplicada2.Registros {
         protected global::System.Web.UI.WebControls.DropDownList CuentaIdDropDownList;
         
         /// <summary>
-        /// ConceptoTextBox control.
+        /// CapitalTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ConceptoTextBox;
+        protected global::System.Web.UI.WebControls.TextBox CapitalTextBox;
         
         /// <summary>
-        /// ValidaConcepto control.
+        /// ValidaCapital control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidaConcepto;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidaCapital;
         
         /// <summary>
-        /// MontoTextBox control.
+        /// InteresTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox MontoTextBox;
+        protected global::System.Web.UI.WebControls.TextBox InteresTextBox;
         
         /// <summary>
-        /// ValidaMonto control.
+        /// ValidaInteres control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidaMonto;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidaInteres;
+        
+        /// <summary>
+        /// TiempoMesesTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TiempoMesesTextBox;
+        
+        /// <summary>
+        /// ValidaMeses control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidaMeses;
+        
+        /// <summary>
+        /// CalcularButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button CalcularButton;
+        
+        /// <summary>
+        /// GridView1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
         /// FechaTextBox control.
@@ -92,32 +119,5 @@ namespace PrimerPacialAplicada2.Registros {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox FechaTextBox;
-        
-        /// <summary>
-        /// NuevoButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button NuevoButton;
-        
-        /// <summary>
-        /// GuardarButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button GuardarButton;
-        
-        /// <summary>
-        /// EliminarButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button EliminarButton;
     }
 }

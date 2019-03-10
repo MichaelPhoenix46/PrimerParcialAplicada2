@@ -36,9 +36,8 @@
             <div class="form-group">
                 <label for="MontoTextBox" class="col-md-3 control-label input-sm" style="font-size: large">Monto</label>
                 <div class="col-md-8">
-                    <asp:TextBox ID="MontoTextBox" runat="server" class="form-control input-sm" Style="font-size: large"></asp:TextBox>
+                    <asp:TextBox ID="MontoTextBox" runat="server" class="form-control input-sm" Style="font-size: large" TextMode="Number"></asp:TextBox>
                 </div>
-                <asp:RegularExpressionValidator ID="ValidaMontoNUM" runat="server" ErrorMessage='Campo "Monto" solo acepta numeros' ControlToValidate="MontoTextBox" ValidationExpression="^[0-9]*" Text="*" ForeColor="Red" Display="Dynamic" ToolTip="Entrada no valida" ValidationGroup="Guardar"></asp:RegularExpressionValidator>
                 <asp:RequiredFieldValidator ID="ValidaMonto" runat="server" ErrorMessage="El campo &quot;Monto&quot; esta vacio" ControlToValidate="MontoTextBox" ForeColor="Red" Display="Dynamic" ToolTip="Campo Monto obligatorio" ValidationGroup="Guardar">*</asp:RequiredFieldValidator>
             </div>
 
