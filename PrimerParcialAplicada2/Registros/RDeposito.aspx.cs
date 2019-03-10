@@ -30,21 +30,21 @@ namespace PrimerPacialAplicada2.Registros
             bool result = int.TryParse(DepositoIdTextBox.Text, out id);
             if (result == true)
             {
-                deposito.DepositoID = id;
+                deposito.DepositoId = id;
             }
             else
             {
-                deposito.DepositoID = 0;
+                deposito.DepositoId = 0;
             }
             int c;
             bool resultados = int.TryParse(CuentaIdDropDownList.Text, out c);
             if (resultados == true)
             {
-                deposito.CuentaID = c;
+                deposito.CuentaId = c;
             }
             else
             {
-                deposito.CuentaID = 0;
+                deposito.CuentaId = 0;
             }
             deposito.Concepto = ConceptoTextBox.Text;
             decimal bal;
@@ -67,8 +67,8 @@ namespace PrimerPacialAplicada2.Registros
         private void LlenaCampos(Deposito deposito)
         {
             Limpiar();
-            DepositoIdTextBox.Text = Convert.ToString(deposito.DepositoID);
-            CuentaIdDropDownList.Text = Convert.ToString(deposito.CuentaID);
+            DepositoIdTextBox.Text = Convert.ToString(deposito.DepositoId);
+            CuentaIdDropDownList.Text = Convert.ToString(deposito.CuentaId);
             ConceptoTextBox.Text = deposito.Concepto;
             MontoTextBox.Text = Convert.ToString(deposito.Monto);
         }
@@ -117,7 +117,7 @@ namespace PrimerPacialAplicada2.Registros
             }
 
             deposito = LlenaClase(deposito);
-            if (deposito.DepositoID == 0)
+            if (deposito.DepositoId == 0)
                 paso = repositorio.Guardar(deposito);
             else
                 paso = repositorio.Modificar(deposito);

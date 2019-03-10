@@ -31,11 +31,11 @@ namespace PrimerPacialAplicada2.Consultas
                     break;
                 case 1://DepositoId
                     id = Utilidades.Utils.ToInt(CriterioTextBox.Text);
-                    filtro = c => c.DepositoID == id;
+                    filtro = c => c.DepositoId == id;
                     break;
                 case 2://CuentaId
                     id = Utilidades.Utils.ToInt(CriterioTextBox.Text);
-                    filtro = c => c.CuentaID == id;
+                    filtro = c => c.CuentaId == id;
                     break;
                 case 3: //Concepto
                     filtro = c => c.Concepto.Contains(CriterioTextBox.Text);
