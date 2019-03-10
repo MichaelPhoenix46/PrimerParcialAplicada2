@@ -20,7 +20,6 @@ namespace Entities
         public virtual List<DetallePrestamo> Detalle { get; set; }
         public DateTime Fecha { get; set; }
 
-
         public Prestamo()
         {
             Detalle = new List<DetallePrestamo>();
@@ -30,6 +29,5 @@ namespace Entities
         {
             Detalle.Add(new DetallePrestamo(Id, Fecha, PrestamoId, Cuota, CuentaId, InteresMensual, CapitalMensual, Balance));
         }
-
     }
 }

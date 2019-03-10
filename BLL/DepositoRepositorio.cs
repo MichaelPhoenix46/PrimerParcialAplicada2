@@ -26,6 +26,26 @@ namespace BLL
             }
             return paso;
         }
+        public override bool Eliminar(int id)
+        {
+            bool paso = false;
+            try
+            {
+                Deposito entity = _contexto.Set<Deposito>().Find(id);
+                _contexto.Cuenta.Find(entity.CuentaId).Balance -= entity.Monto;
+                _contexto.Set<Deposito>().Remove(entity);
+
+                if (_contexto.SaveChanges() > 0)
+                    paso = true;
+
+                _contexto.Dispose();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return paso;
+        }
 
         public override bool Modificar(Deposito entity)
         {
