@@ -11,7 +11,7 @@ namespace PrimerParcialAplicada2.Registros
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            LlenaCombo();
         }
     }
 }
