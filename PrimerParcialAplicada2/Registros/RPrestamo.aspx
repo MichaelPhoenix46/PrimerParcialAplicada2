@@ -51,10 +51,10 @@
                 <asp:RequiredFieldValidator ID="ValidaMeses" runat="server" ErrorMessage="El campo &quot;Tiempo en meses&quot; esta vacio" ControlToValidate="TiempoMesesTextBox" ForeColor="Red" Display="Dynamic" ToolTip="Campo tiempo en meses obligatorio" ValidationGroup="Guardar" BorderColor="Red">*</asp:RequiredFieldValidator>
                 <asp:Button ID="CalcularButton" runat="server" Text="Calcular" Class="btn btn-default btn" />
             </div>
-<%--            agregar el gridview--%>
-          <div class="form-group">
-              <asp:GridView ID="GridView1" runat="server"></asp:GridView>
-          </div> 
+            <%--            agregar el gridview--%>
+            <div class="form-group">
+                <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+            </div>
 
             <div class="form-group">
                 <div class="col-md-8">
