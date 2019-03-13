@@ -105,7 +105,7 @@
     <Content Include="Registros\RCuenta.aspx" />
     <Content Include="Registros\RDeposito.aspx" />
     <Content Include="Registros\RPrestamo.aspx" />
-    <Content Include="Reportes\RPrestamos.aspx" />
+    <Content Include="Reportes\RePrestamos.aspx" />
     <Content Include="Resources\BancoDigital.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
@@ -181,12 +181,12 @@
     <Compile Include="Registros\RPrestamo.aspx.designer.cs">
       <DependentUpon>RPrestamo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Reportes\RPrestamos.aspx.cs">
-      <DependentUpon>RPrestamos.aspx</DependentUpon>
+    <Compile Include="Reportes\RePrestamos.aspx.cs">
+      <DependentUpon>RePrestamos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Reportes\RPrestamos.aspx.designer.cs">
-      <DependentUpon>RPrestamos.aspx</DependentUpon>
+    <Compile Include="Reportes\RePrestamos.aspx.designer.cs">
+      <DependentUpon>RePrestamos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

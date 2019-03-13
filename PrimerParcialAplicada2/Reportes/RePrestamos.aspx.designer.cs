@@ -10,7 +10,7 @@
 namespace PrimerParcialAplicada2.Reportes {
     
     
-    public partial class RPrestamos {
+    public partial class RePrestamos {
         
         /// <summary>
         /// form1 control.

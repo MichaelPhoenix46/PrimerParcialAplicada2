@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RPrestamos.aspx.cs" Inherits="PrimerParcialAplicada2.Reportes.RPrestamos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RePrestamos.aspx.cs" Inherits="PrimerParcialAplicada2.Reportes.RePrestamos" %>
 
 <%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
     Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>

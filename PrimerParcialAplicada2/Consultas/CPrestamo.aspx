@@ -36,6 +36,7 @@
             </asp:GridView>
         </div>
         <div class="col-md-2">
-            <asp:Button ID="ImprimirButton" runat="server" Text="Imprimir" class="btn btn-primary btn-lg" />
+            <asp:Button ID="ImprimirButton" runat="server" Text="Imprimir" class="btn btn-primary btn-lg" OnClick="ImprimirButton_Click1" />
         </div>
+    </div>
 </asp:Content>

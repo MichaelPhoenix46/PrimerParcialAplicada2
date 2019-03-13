@@ -12,16 +12,16 @@ namespace PrimerPacialAplicada2.Consultas
 {
     public partial class CPrestamo : System.Web.UI.Page
     {
+        Expression<Func<Prestamo, bool>> filtro = x => true;
+        RepositorioBase<Prestamo> repositorio = new RepositorioBase<Prestamo>();
+        public static List<Prestamo> lprestamo = new List<Prestamo>();
         protected void Page_Load(object sender, EventArgs e)
         {
-            Buscar();
+            lprestamo = repositorio.GetList(x => true);
         }
 
         private void Buscar()
         {
-            Expression<Func<Prestamo, bool>> filtro = x => true;
-            RepositorioBase<Prestamo> repositorio = new RepositorioBase<Prestamo>();
-
             int id;
             switch (FiltroDropDownList.SelectedIndex)
             {
@@ -41,7 +41,8 @@ namespace PrimerPacialAplicada2.Consultas
                     break;
             }
 
-            DatosGridView.DataSource = repositorio.GetList(filtro);
+            lprestamo = repositorio.GetList(filtro);
+            DatosGridView.DataSource = lprestamo;
             DatosGridView.DataBind();
         }
 
@@ -50,8 +51,11 @@ namespace PrimerPacialAplicada2.Consultas
             Buscar();
         }
 
-        protected void ImprimirButton_Click(object sender, EventArgs e)
+       
+
+        protected void ImprimirButton_Click1(object sender, EventArgs e)
         {
+            Response.Redirect(@"~\Reportes\RePrestamos.aspx");
 
         }
     }
