@@ -23,20 +23,21 @@ namespace PrimerPacialAplicada2.Consultas
             RepositorioBase<Prestamo> repositorio = new RepositorioBase<Prestamo>();
 
             int id;
-            decimal n;
             switch (FiltroDropDownList.SelectedIndex)
             {
-                case 0: //Todo
+                case 0: //Todor
                     repositorio.GetList(x => true);
                     break;
                     
                 case 1://PrestamoId
                     id = Utilidades.Utils.ToInt(CriterioTextBox.Text);
-                    filtro = c => c.PrestamoId == id && (c.Fecha >= Convert.ToDateTime(DesdeTextBox.Text) && c.Fecha <= Convert.ToDateTime(HastaTextBox.Text));
+                    filtro = c => c.PrestamoId == id;
+                    //&&(c.Fecha >= Convert.ToDateTime(DesdeTextBox.Text) && c.Fecha <= Convert.ToDateTime(HastaTextBox.Text));
                     break;
                 case 2://CuentaId
                     id = Utilidades.Utils.ToInt(CriterioTextBox.Text);
-                    filtro = c => c.CuentaId == id && (c.Fecha >= Convert.ToDateTime(DesdeTextBox.Text) && c.Fecha <= Convert.ToDateTime(HastaTextBox.Text));
+                    filtro = c => c.CuentaId == id;
+                    //&& (c.Fecha >= Convert.ToDateTime(DesdeTextBox.Text) && c.Fecha <= Convert.ToDateTime(HastaTextBox.Text));
                     break;
             }
 
@@ -47,6 +48,11 @@ namespace PrimerPacialAplicada2.Consultas
         protected void BuscarButton_Click(object sender, EventArgs e)
         {
             Buscar();
+        }
+
+        protected void ImprimirButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

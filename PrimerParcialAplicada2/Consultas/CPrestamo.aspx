@@ -18,14 +18,14 @@
         <div class="col-md-2">
             <asp:Button ID="BuscarButton" runat="server" Text="Buscar" class="btn btn-info btn-md" OnClick="BuscarButton_Click" />
         </div>
-        <div class="col-md-6">
+       <%-- <div class="col-md-6">
             <label for="DesdeTextBox" class="col-md-3 control-label input-sm" style="font-size: large">Desde</label>
             <asp:TextBox ID="DesdeTextBox" runat="server" class="form-control input-sm" Style="font-size: medium"></asp:TextBox>
         </div>
         <div class="col-md-6">
             <label for="HastaTextBox" class="col-md-3 control-label input-sm" style="font-size: large">Hasta</label>
             <asp:TextBox ID="HastaTextBox" runat="server" class="form-control input-sm" Style="font-size: medium" TextMode="DateTime"></asp:TextBox>
-        </div>
+        </div>--%>
         <br />
         <br />
         <div>
